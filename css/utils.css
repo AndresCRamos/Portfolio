@@ -1,0 +1,17 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(180, 7%, 5%);
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
