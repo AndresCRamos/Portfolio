@@ -1,4 +1,10 @@
-.main_section {
+section {
+    width: clamp(320px, 80%, 800px);
+    margin: 0 auto;
+}
+
+.main_section,
+.projects_section {
     height: 100vh;
 }
 
@@ -6,8 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: clamp(320px, 80%, 800px);
-    height: 70vh;
+    height: 75vh;
     margin: 0 auto;
     padding: 20px 20px 20px;
     font-size: 1rem;
@@ -27,11 +32,57 @@
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: clamp(320px, 80%, 800px);
     height: 5vh;
     margin: 0 auto;
+    padding-left: 0;
+    overflow: auto;
 }
 
 .link_list__item {
     text-decoration: none;
+}
+
+.projects_section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects_section__title {
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+    margin: 20px auto 20px;
+}
+
+.card__title {
+    font-size: 1rem;
+}
+
+.card__description {
+    font-weight: 400;
+    font-family: 0.8rem;
+}
+
+.stack_container {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.slider_tools {
+    position: absolute;
+    bottom: 40px;
+}
+
+.slider_butttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
