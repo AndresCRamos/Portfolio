@@ -1,18 +1,29 @@
 section {
-    width: clamp(320px, 80%, 800px);
+    min-width: 320px;
+    width: 80%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .main_section,
 .projects_section {
-    height: 100vh;
+    min-height: 100vh;
+    
+}
+
+.main_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 75vh;
+    min-height: 80vh;
     margin: 0 auto;
     padding: 20px 20px 20px;
     font-size: 1rem;
@@ -32,10 +43,8 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 5vh;
     margin: 0 auto;
     padding-left: 0;
-    overflow: auto;
 }
 
 .link_list__item {
@@ -58,8 +67,22 @@ section {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in-out;
     width: 80%;
-    margin: 20px auto 20px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px inset;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    margin-bottom: 40px;
+    box-shadow: rgb(38, 57, 77) 0px 2px 8px 0px, rgb(38, 57, 77) 0px 2px 8px 0px inset;
 }
 
 .card__title {
@@ -74,14 +97,15 @@ section {
 .stack_container {
     font-size: 0.7rem;
     font-weight: 300;
+    margin-top: 1rem;
 }
 
 .slider_tools {
-    position: absolute;
-    bottom: 40px;
+    float: inline-end;
+    margin-bottom: 40px;
 }
 
-.slider_butttons {
+.slider_buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
