@@ -6,7 +6,8 @@ section {
 }
 
 .main_section,
-.projects_section {
+.projects_section,
+.knowledge_section {
     min-height: 100vh;
     
 }
@@ -45,10 +46,12 @@ section {
     align-items: flex-start;
     margin: 0 auto;
     padding-left: 0;
+    width: 100%;
 }
 
 .link_list__item {
     text-decoration: none;
+    display: block;
 }
 
 .projects_section {
@@ -76,13 +79,13 @@ section {
     margin: 20px auto;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px inset;
+    box-shadow: hsla(0, 0%, 39%, 20%) 0px 2px 8px 0px inset;
 }
 
 .card:hover {
     transform: scale(1.2);
     margin-bottom: 40px;
-    box-shadow: rgb(38, 57, 77) 0px 2px 8px 0px, rgb(38, 57, 77) 0px 2px 8px 0px inset;
+    box-shadow: hsl(211, 34%, 23%) 0px 2px 8px 0px, hsl(211, 34%, 23%) 0px 2px 8px 0px inset;
 }
 
 .card__title {
@@ -109,4 +112,38 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.knowledge_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.knowledge_card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.knowledge__card:hover {
+    transform: none;
+    margin-bottom: 20px;
+    box-shadow: hsl(0, 34%, 50%) 0px 2px 8px 0px, hsl(0, 34%, 50%) 0px 2px 8px 0px inset;
+}
+
+.knowledge__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    width: 100%;
+}
+
+.knowledge__grid_item {
+    display: block;
+    text-align: center;
 }

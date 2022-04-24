@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/moon.css">
 </head>
 <body>
     <main>
@@ -22,9 +21,9 @@
                 <p class="main__paragraph">Fluent in Python, JavaScript and Go</p>
             </article>
             <ul class="link_list">
-                <ul class="link_list__item"><a href="#projects" class="link_list__link">Projects</a></ul>
-                <ul class="link_list__item"><a href="" class="link_list__link">Knowledge</a></ul>
-                <ul class="link_list__item"><a href="#about_me" class="link_list__link">About me</a></ul>
+                <li class="link_list__item"><a href="#projects" class="link_list__link">Projects</a></li>
+                <li class="link_list__item"><a href="" class="link_list__link">Knowledge</a></li>
+                <li class="link_list__item"><a href="#about_me" class="link_list__link">About me</a></li>
             </ul>
         </section>
         <section id="projects" class="projects_section">
@@ -71,6 +70,34 @@
                     <div id="slider_prev" class="slider_button">Prev</div>
                     <div id="slider_next" class="slider_button">Next</div>
                 </div>
+            </div>
+        </section>
+        <section id="knowledge" class="knowledge_section">
+            <h2>Knows</h2>
+            <div class="knowledge_card_container">
+                <article class="knowledge__card card">
+                    <h1 class="knowledge__card__title">Languajes</h1>
+                    <ul class="knowledge__grid">
+                        <li class="knowledge__grid_item">Python</li>
+                        <li class="knowledge__grid_item">Go</li>
+                        <li class="knowledge__grid_item">PHP</li>
+                    </ul>
+                </article>
+                <article class="knowledge__card card">
+                    <h1 class="knowledge__card__title">Databases</h1>
+                    <ul class="knowledge__grid">
+                        <li class="knowledge__grid_item">PostgreSQL</li>
+                        <li class="knowledge__grid_item">MySQL</li>
+                        <li class="knowledge__grid_item">MariaDB</li>
+                        <li class="knowledge__grid_item">SQL Server</li>
+                    </ul>
+                </article>
+                <article class="knowledge__card card">
+                    <h1 class="knowledge__card__title">Others</h1>
+                    <ul class="knowledge__grid">
+                        <li class="knowledge__grid_item">Docker</li>
+                    </ul>
+                </article>
             </div>
         </section>
     </main>
