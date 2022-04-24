@@ -11,6 +11,10 @@ body {
     font-family: "Roboto Mono", monospace;
 }
 
+ul {
+    padding-left: 2ch;
+}
+
 a{
     color: white;
     text-decoration: none;
