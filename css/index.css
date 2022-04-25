@@ -182,8 +182,19 @@ main {
     display: block;
     text-align: center;
     margin: 0.5rem 0;
+    transition: all 200ms ease-in-out;
+}
+
+.contact__contact_list__item:hover{
+    transform: scale(1.2);
+}
+
+.contact__contact_list__item a {
+    transition: all 200ms ease-in-out;
 }
 
 .contact__contact_list__item:hover a {
     color: hsl(220,50%, 60%);
+    font-weight: bold;
+    transform: scale(1.1);
 }
