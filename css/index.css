@@ -1,8 +1,9 @@
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 
 .main_section,
@@ -14,6 +15,8 @@ main {
     max-width: 800px;
     min-height: 100vh;
     padding: 20px;
+    margin: 0 auto;
+    scroll-snap-align: start;
 }
 
 .main_section {
