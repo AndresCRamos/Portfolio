@@ -1,15 +1,19 @@
-section {
-    min-width: 320px;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_section,
 .projects_section,
-.knowledge_section {
+.knowledge_section,
+.about_section {
+    min-width: 300px;
+    width: 80%;
+    max-width: 800px;
     min-height: 100vh;
-    
+    padding: 20px;
 }
 
 .main_section {
@@ -17,7 +21,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .main {
@@ -26,7 +29,6 @@ section {
     justify-content: center;
     min-height: 80vh;
     margin: 0 auto;
-    padding: 20px 20px 20px;
     font-size: 1rem;
 }
 
@@ -146,4 +148,34 @@ section {
 .knowledge__grid_item {
     display: block;
     text-align: center;
+}
+
+.about_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact__title {
+    margin-bottom: 30px;
+}
+
+.contact__contact_list__item {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.contact__contact_list__item:hover a {
+    color: hsl(220,50%, 60%);
 }
