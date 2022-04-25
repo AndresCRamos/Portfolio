@@ -13,6 +13,7 @@ main {
     width: 80%;
     max-width: 800px;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .main_section {
@@ -28,7 +29,6 @@ main {
     justify-content: center;
     min-height: 80vh;
     margin: 0 auto;
-    padding: 20px 20px 20px;
     font-size: 1rem;
 }
 
@@ -160,4 +160,22 @@ main {
 .about_me__title {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact__title {
+    margin-bottom: 30px;
+}
+
+.contact__contact_list__item {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.contact__contact_list__item:hover a {
+    color: hsl(220,50%, 60%);
 }
