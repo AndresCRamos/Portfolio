@@ -4,6 +4,11 @@ main {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    background-color: hsl(180, 7%, 5%);
+    border-radius: 20px;
+    box-shadow: 
+    hsla(250, 70%, 39%, 40%) 0px 0px 20px 5px inset,
+    hsla(250, 70%, 39%, 40%) -20px 0px 20px 5px inset;
 }
 
 .main_section,
