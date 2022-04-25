@@ -1,5 +1,7 @@
 main {
+    width: calc(100vw - 20px);
     height: 100vh;
+    overflow-x: hidden;
     overflow-y: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
@@ -72,25 +74,67 @@ main {
     flex-direction: column;
 }
 .projects_section__title {
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
 }
 
-.slider {
+.project_slider {
     width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .card {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 200ms ease-in-out;
-    width: 80%;
+    min-width: 280px;
+    width: 50%;
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 20px;
     box-shadow: hsla(0, 0%, 39%, 20%) 0px 2px 8px 0px inset;
 }
+
+.animate-in-left {
+    position:absolute;
+    animation: animateleft 1s
+}
+
+@keyframes animateleft {
+    from {
+        left:-100vw;
+        opacity:0;
+    }
+    to {
+        left: 50%;
+        transform: translateX(-50%);
+        opacity:1;
+    }
+}
+
+.animate-out-right {
+    position:absolute;
+    animation: animateright 1s forwards;
+}
+
+@keyframes animateright {
+    from {
+        right: 50%;
+        transform: translateX(50%);
+        opacity:1;
+    }
+    to {
+        right: -100vw;
+        opacity:0;
+    }
+}
+
 
 .card:hover {
     transform: scale(1.2);
