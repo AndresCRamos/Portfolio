@@ -87,7 +87,7 @@ main {
 }
 
 .card {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ main {
 
 .animate-in-left {
     position:absolute;
-    animation: animateleft 1s
+    animation: animateleft 1s forwards
 }
 
 @keyframes animateleft {
@@ -118,12 +118,46 @@ main {
     }
 }
 
-.animate-out-right {
+.animate-out-left {
     position:absolute;
-    animation: animateright 1s forwards;
+    animation: animateleftout 1s forwards
+}
+
+@keyframes animateleftout {
+    from {
+        left: 50%;
+        transform: translateX(-50%);
+        opacity:1;
+    }
+    to {
+        left:-100vw;
+        opacity:0;
+    }
+}
+
+.animate-in-right {
+    position:absolute;
+    animation: animateright 1s;
 }
 
 @keyframes animateright {
+    from {
+        right: -100vw;
+        opacity:0;
+    }
+    to {
+        right: 50%;
+        transform: translateX(50%);
+        opacity:1;
+    }
+}
+
+.animate-out-right {
+    position:absolute;
+    animation: animaterightout 1s forwards;
+}
+
+@keyframes animaterightout {
     from {
         right: 50%;
         transform: translateX(50%);
@@ -184,6 +218,10 @@ main {
     width: 100%;
 }
 
+.knowledge__card {
+    display: flex;
+}
+
 .knowledge__card:hover {
     transform: none;
     margin-bottom: 20px;
@@ -226,7 +264,7 @@ main {
     display: block;
     text-align: center;
     margin: 0.5rem 0;
-    transition: all 200ms ease-in-out;
+    transition: all 200s ease-in-out;
 }
 
 .contact__contact_list__item:hover{
