@@ -1,9 +1,16 @@
 main {
+    width: calc(100vw - 20px);
     height: 100vh;
+    overflow-x: hidden;
     overflow-y: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    background-color: hsl(180, 7%, 5%);
+    border-radius: 20px;
+    box-shadow: 
+    hsla(250, 70%, 39%, 40%) 0px 0px 20px 5px inset,
+    hsla(250, 70%, 39%, 40%) -20px 0px 20px 5px inset;
 }
 
 .main_section,
@@ -67,11 +74,16 @@ main {
     flex-direction: column;
 }
 .projects_section__title {
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
 }
 
-.slider {
+.project_slider {
     width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .card {
@@ -80,12 +92,83 @@ main {
     justify-content: center;
     align-items: center;
     transition: all 200ms ease-in-out;
-    width: 80%;
+    min-width: 280px;
+    width: 50%;
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 20px;
     box-shadow: hsla(0, 0%, 39%, 20%) 0px 2px 8px 0px inset;
 }
+
+.animate-in-left {
+    position:absolute;
+    animation: animateleft 1s forwards
+}
+
+@keyframes animateleft {
+    from {
+        left:-100vw;
+        opacity:0;
+    }
+    to {
+        left: 50%;
+        transform: translateX(-50%);
+        opacity:1;
+    }
+}
+
+.animate-out-left {
+    position:absolute;
+    animation: animateleftout 1s forwards
+}
+
+@keyframes animateleftout {
+    from {
+        left: 50%;
+        transform: translateX(-50%);
+        opacity:1;
+    }
+    to {
+        left:-100vw;
+        opacity:0;
+    }
+}
+
+.animate-in-right {
+    position:absolute;
+    animation: animateright 1s;
+}
+
+@keyframes animateright {
+    from {
+        right: -100vw;
+        opacity:0;
+    }
+    to {
+        right: 50%;
+        transform: translateX(50%);
+        opacity:1;
+    }
+}
+
+.animate-out-right {
+    position:absolute;
+    animation: animaterightout 1s forwards;
+}
+
+@keyframes animaterightout {
+    from {
+        right: 50%;
+        transform: translateX(50%);
+        opacity:1;
+    }
+    to {
+        right: -100vw;
+        opacity:0;
+    }
+}
+
 
 .card:hover {
     transform: scale(1.2);
@@ -135,6 +218,10 @@ main {
     width: 100%;
 }
 
+.knowledge__card {
+    display: flex;
+}
+
 .knowledge__card:hover {
     transform: none;
     margin-bottom: 20px;
@@ -177,8 +264,19 @@ main {
     display: block;
     text-align: center;
     margin: 0.5rem 0;
+    transition: all 200s ease-in-out;
+}
+
+.contact__contact_list__item:hover{
+    transform: scale(1.2);
+}
+
+.contact__contact_list__item a {
+    transition: all 200ms ease-in-out;
 }
 
 .contact__contact_list__item:hover a {
     color: hsl(220,50%, 60%);
+    font-weight: bold;
+    transform: scale(1.1);
 }
