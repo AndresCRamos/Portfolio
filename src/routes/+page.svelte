@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+  import SnapScroll from '$lib/components/SnapScroll.svelte';
+  import About from '$lib/components/About.svelte';
+</script>
+
+<main class="p-5">
+  <SnapScroll>
+    <About />
+  </SnapScroll>
+</main>
