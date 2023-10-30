@@ -4,7 +4,7 @@
     children.forEach((child) => {
       const snap_child = document.createElement('div');
       snap_child.className +=
-        'snap-center flex flex-col justify-center items-center w-full h-[95vh] p-5';
+        ' mx-auto snap-center flex flex-col justify-center items-center w-full max-w-4xl h-[95vh] p-5';
       node.replaceChild(snap_child, child);
       snap_child.appendChild(child);
     });
