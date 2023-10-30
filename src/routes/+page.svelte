@@ -3,7 +3,7 @@
   import About from '$lib/components/About.svelte';
 </script>
 
-<main class="p-5">
+<main>
   <SnapScroll>
     <About />
   </SnapScroll>
