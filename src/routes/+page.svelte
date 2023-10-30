@@ -5,7 +5,7 @@
   import Projects from '$lib/components/Projects.svelte';
 </script>
 
-<main>
+<main class="w-full h-[95vh]">
   <SnapScroll>
     <About />
     <ContactMe />
