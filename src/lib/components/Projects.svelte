@@ -1,5 +1,5 @@
 <script>
-  import ProjectCarousel from './ProjectCarousel.svelte';
+  import { ProjectCarousel } from './ProjectCarousel';
 
   let projects = [
     {
@@ -18,6 +18,6 @@
   ];
 </script>
 
-<div class="project">
+<div>
   <ProjectCarousel {projects} />
 </div>
