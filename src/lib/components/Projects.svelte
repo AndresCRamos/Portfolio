@@ -19,5 +19,6 @@
 </script>
 
 <div>
+  <h1 class="mb-4">Personal Projects</h1>
   <ProjectCarousel {projects} />
 </div>
