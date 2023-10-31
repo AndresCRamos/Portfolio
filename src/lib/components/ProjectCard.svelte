@@ -7,7 +7,9 @@
 </script>
 
 <Card class="mx-auto relative" padding="none">
-  <h1 class="font-bold text-center mb-5 text-2xl rounded-t-lg p-2 bg-primary-400 text-gray-500">
+  <h1
+    class="font-bold text-center mb-5 text-2xl rounded-t-lg p-2 bg-secondary-400 dark:bg-secondary-500 text-gray-500 dark:text-gray-700"
+  >
     {title}
   </h1>
   <p class="px-5 pb-2">{description}</p>
