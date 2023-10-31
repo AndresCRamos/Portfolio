@@ -12,7 +12,7 @@
   >
     {title}
   </h1>
-  <p class="px-5 pb-2">{description}</p>
+  <p class="px-5 pb-2 text-base sm:text-xl">{description}</p>
 
   <div class="card_hover">
     <ul>
