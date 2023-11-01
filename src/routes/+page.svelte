@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SnapScroll from '$lib/components/SnapScroll.svelte';
+  import { SnapScroll, SnapChild } from '$lib/components/SnapScroll';
   import About from '$lib/components/About.svelte';
   import ContactMe from '$lib/components/ContactMe.svelte';
   import Projects from '$lib/components/Projects.svelte';
@@ -7,8 +7,14 @@
 
 <main class="w-full h-[95vh]">
   <SnapScroll>
-    <About />
-    <ContactMe />
-    <Projects />
+    <SnapChild>
+      <About />
+    </SnapChild>
+    <SnapChild>
+      <ContactMe />
+    </SnapChild>
+    <SnapChild>
+      <Projects />
+    </SnapChild>
   </SnapScroll>
 </main>
