@@ -12,13 +12,13 @@
       <About />
     </SnapChild>
     <SnapChild>
-      <ContactMe />
-    </SnapChild>
-    <SnapChild>
       <Projects />
     </SnapChild>
     <SnapChild>
       <Experience />
+    </SnapChild>
+    <SnapChild>
+      <ContactMe />
     </SnapChild>
   </SnapScroll>
 </main>
