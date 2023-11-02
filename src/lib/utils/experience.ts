@@ -1,16 +1,16 @@
 const experiences = [
   {
-    company: 'Mercado pago',
-    job: 'Software Analyst',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem aut repellendus officia exercitationem consequatur nesciunt voluptatibus hic? Itaque accusamus non porro eligendi dolor blanditiis omnis vel iste ipsa quisquam!',
-    redirect: ''
-  },
-  {
     company: 'Contractor at Tata Consultant Services',
     job: 'PHP Junior Dev',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem aut repellendus officia exercitationem consequatur nesciunt voluptatibus hic? Itaque accusamus non porro eligendi dolor blanditiis omnis vel iste ipsa quisquam!',
+      'I worked for a software engineer who had a contract with Tata Consultant Services, mantaining PHP legacy apps for clients',
+    redirect: ''
+  },
+  {
+    company: 'Mercado pago',
+    job: 'Software Analyst',
+    description:
+      'I worked with the communication layer between Mercado Pago ecosystem and banks accross Latin America',
     redirect: ''
   }
 ];
