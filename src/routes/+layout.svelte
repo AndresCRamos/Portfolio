@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  <nav class="flex justify-end h-[5vh]">
+  <nav class="flex justify-end h-[5dvh]">
     <DarkMode class="w-[5vh] flex justify-center items-center" />
   </nav>
   <slot />
