@@ -1,8 +1,14 @@
 <div>
-  <h1>About me</h1>
+  <h1 class="mb-4">About me</h1>
+  <p>A full stack dev starting its new journey in this space full opportunities and challenges</p>
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit cumque est quos
-    repudiandae, magnam quo officiis eos placeat non architecto temporibus nemo? Sit aliquam fugiat
-    amet fuga possimus laborum quasi.
+    Im a passionate learner, always searching for new ways to improve my skills and ways to
+    opportunities to challenge myself in the search of improving
   </p>
 </div>
+
+<style lang="postcss">
+  p {
+    @apply my-2;
+  }
+</style>
