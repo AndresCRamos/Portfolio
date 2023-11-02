@@ -21,7 +21,7 @@
 
 <div class="w-full">
   <h1>Experience</h1>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
     {#each experiences as experience}
       <Card class="flex flex-col w-full max-w-none">
         <div class="flex-grow">
