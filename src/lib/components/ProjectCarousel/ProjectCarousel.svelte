@@ -1,12 +1,12 @@
 <script lang="ts">
   import '@splidejs/splide/dist/css/splide.min.css';
   import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
-  import ProjectLinkCard from './ProjectLinkCard.svelte';
+  import ProjectCard from './ProjectCard.svelte';
 
   let options = {
     perPage: 1,
     drag: true,
-    autoplay: true,
+    // autoplay: true,
     type: 'loop',
     gap: '4rem',
     pagination: false,
@@ -32,7 +32,7 @@
       <SplideTrack>
         {#each projects as project}
           <SplideSlide>
-            <ProjectLinkCard {...project} />
+            <ProjectCard {...project} />
           </SplideSlide>
         {/each}
       </SplideTrack>
