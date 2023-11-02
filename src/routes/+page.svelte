@@ -3,6 +3,7 @@
   import About from '$lib/components/About.svelte';
   import ContactMe from '$lib/components/ContactMe.svelte';
   import Projects from '$lib/components/Projects.svelte';
+  import Experience from '$lib/components/Experience.svelte';
 </script>
 
 <main class="w-full h-[95vh]">
@@ -15,6 +16,9 @@
     </SnapChild>
     <SnapChild>
       <Projects />
+    </SnapChild>
+    <SnapChild>
+      <Experience />
     </SnapChild>
   </SnapScroll>
 </main>
