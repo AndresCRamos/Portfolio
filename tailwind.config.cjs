@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const config = {
   content: [
     './src/**/*.{html,js,svelte,ts}',
@@ -9,6 +12,10 @@ const config = {
   darkMode: 'class',
 
   theme: {
+    screens: {
+      xs: '425px',
+      ...defaultTheme.screens
+    },
     extend: {
       colors: {
         // flowbite-svelte
