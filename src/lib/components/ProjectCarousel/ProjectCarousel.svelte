@@ -55,4 +55,8 @@
   .splide__arrow {
     @apply bg-secondary-400 w-10 h-10 text-white hidden sm:block;
   }
+
+  :global(.splide__slide) {
+    @apply flex flex-col justify-center;
+  }
 </style>
