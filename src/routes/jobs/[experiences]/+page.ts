@@ -16,7 +16,13 @@ const job_experience = new Map([
     {
       title: 'Mercado Libre',
       position: 'Software Analyst',
-      stack: ['Golang', 'Gin Gonic', 'REST APIs']
+      blocks: [
+        {
+          type: 'list',
+          title: 'Tech Stack',
+          value: ['Golang', 'Gin Gonic', 'REST APIs']
+        }
+      ]
     }
   ]
 ]);
