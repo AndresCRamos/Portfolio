@@ -11,7 +11,7 @@ const experiences = [
     job: 'Software Analyst',
     description:
       'I worked with the communication layer between Mercado Pago ecosystem and banks accross Latin America',
-    redirect: ''
+    redirect: '/jobs/mercadolibre'
   }
 ];
 
