@@ -11,7 +11,7 @@
   export let url: string;
 </script>
 
-<Button href={url} class="gap-2 items-center  justify-center group">
+<Button href={url} class="gap-2 items-center  justify-center">
   {#if title == 'Github'}
     <GithubSolid />
   {:else if title == 'LinkedIn'}
@@ -20,5 +20,5 @@
     <EnvelopeSolid class="group-hover:hidden" />
     <EnvelopeOpenSolid class="hidden group-hover:block" />
   {/if}
-  <span class="lg:hidden lg:group-hover:block">{title}</span>
+  <span>{title}</span>
 </Button>
