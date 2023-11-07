@@ -4,8 +4,7 @@
 
 <div>
   {#if title}
-    <h3 class="text-lg text-accent-500 dark:text-accent-300">{title}</h3>
+    <h3 class="text-2xl text-accent-500 dark:text-accent-300">{title}</h3>
   {/if}
-
   <slot />
 </div>
