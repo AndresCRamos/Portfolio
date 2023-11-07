@@ -9,7 +9,7 @@
 {#each block_list as block}
   {#if block.type == 'list'}
     <ListBLock title={block.title} items={block.value} />
-    <!-- {:else if block.type == 'text'}
-    <TextBlock title={block.title} text={block.value} /> -->
+  {:else if block.type == 'text'}
+    <TextBlock title={block.title} text={block.value} />
   {/if}
 {/each}
