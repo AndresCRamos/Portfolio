@@ -1,11 +1,21 @@
 <script>
   import { Button, ButtonGroup } from 'flowbite-svelte';
-  import {
-    EnvelopeOpenSolid,
-    EnvelopeSolid,
-    GithubSolid,
-    LinkedinSolid
-  } from 'flowbite-svelte-icons';
+  import SocialButton from './SocialButton.svelte';
+
+  const socials = [
+    {
+      title: 'Github',
+      url: ''
+    },
+    {
+      title: 'LinkedIn',
+      url: ''
+    },
+    {
+      title: 'Mail',
+      url: ''
+    }
+  ];
 </script>
 
 <div>
@@ -17,18 +27,8 @@
   <h2 class="text-secondary-500 dark:text-secondary-300">Want to chat?</h2>
   <p class="text-xl my-2">Don't be afraid to leave a message</p>
   <ButtonGroup>
-    <Button class="gap-2 items-center  justify-center group">
-      <GithubSolid />
-      <span>Github</span>
-    </Button>
-    <Button class="gap-2 items-center  justify-center">
-      <LinkedinSolid />
-      <span>LinkedIn</span>
-    </Button>
-    <Button class="gap-2 items-center  justify-center group">
-      <EnvelopeSolid class="group-hover:hidden" />
-      <EnvelopeOpenSolid class="hidden group-hover:block" />
-      <span>Mail</span>
-    </Button>
+    {#each socials as social}
+      <SocialButton {...social} />
+    {/each}
   </ButtonGroup>
 </div>
