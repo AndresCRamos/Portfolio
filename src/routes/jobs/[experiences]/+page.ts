@@ -1,5 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import type { Block } from '$lib/types/block';
 
 export const load = (async ({ params }) => {
   const experience = params.experiences;
@@ -22,7 +23,7 @@ const job_experience = new Map([
           title: 'Tech Stack',
           value: ['Golang', 'Gin Gonic', 'REST APIs']
         }
-      ]
+      ] as Block[]
     }
   ]
 ]);

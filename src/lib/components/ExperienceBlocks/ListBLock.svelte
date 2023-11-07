@@ -2,12 +2,12 @@
   import BasicBlock from './BasicBlock.svelte';
 
   export let title: string = '';
-  export let value: any[];
+  export let items: string[];
 </script>
 
 <BasicBlock {title}>
   <ul>
-    {#each value as item}
+    {#each items as item}
       <li class="font-light">{item}</li>
     {/each}
   </ul>
