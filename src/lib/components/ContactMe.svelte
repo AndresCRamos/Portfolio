@@ -1,21 +1,7 @@
 <script>
   import { Button, ButtonGroup } from 'flowbite-svelte';
   import SocialButton from './SocialButton.svelte';
-
-  const socials = [
-    {
-      title: 'Github',
-      url: ''
-    },
-    {
-      title: 'LinkedIn',
-      url: ''
-    },
-    {
-      title: 'Mail',
-      url: ''
-    }
-  ];
+  import socials from '$lib/utils/socials';
 </script>
 
 <div>
