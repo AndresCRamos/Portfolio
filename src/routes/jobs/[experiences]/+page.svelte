@@ -1,12 +1,18 @@
 <script lang="ts">
   import DynamicBlocks from '$lib/components/ExperienceBlocks/DynamicBlocks.svelte';
+  import { Button } from 'flowbite-svelte';
   import type { PageData } from './$types';
 
   export let data: PageData;
 </script>
 
-<h1 class="text-4xl">{data.title}</h1>
-<h2 class="text-2xl text-secondary-500 dark:text-secondary-400">{data.position}</h2>
-{#if data.blocks}
-  <DynamicBlocks block_list={data.blocks} />
-{/if}
+<main class="h-[95dvh] overflow-y-auto mx-auto">
+  <div class=" w-4/5 mx-auto mt-24 mb-8">
+    <Button href="/" size="lg" class="w-full max-w-3xl">Go back</Button>
+    <h1 class="text-4xl mt-12">{data.title}</h1>
+    <h2 class="text-2xl text-secondary-500 dark:text-secondary-400 mb-24">{data.position}</h2>
+    {#if data.blocks}
+      <DynamicBlocks block_list={data.blocks} />
+    {/if}
+  </div>
+</main>
