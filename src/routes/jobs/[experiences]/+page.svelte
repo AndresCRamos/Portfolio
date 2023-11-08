@@ -2,6 +2,7 @@
   import DynamicBlocks from '$lib/components/ExperienceBlocks/DynamicBlocks.svelte';
   import { Button } from 'flowbite-svelte';
   import type { PageData } from './$types';
+  import CurvyDecorator from '$lib/components/CurvyDecorator.svelte';
 
   export let data: PageData;
 </script>
@@ -13,6 +14,8 @@
     <h2 class="text-2xl text-secondary-500 dark:text-secondary-400 mb-24">{data.position}</h2>
     {#if data.blocks}
       <DynamicBlocks block_list={data.blocks} />
+      <div class="mb-24 md:mb-32" />
+      <CurvyDecorator />
     {/if}
   </div>
 </main>
