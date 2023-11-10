@@ -1,5 +1,5 @@
 <script>
-  import { experiences } from '$lib/utils/experience';
+  import { experiences } from '$lib/data/experience';
   import { Card } from 'flowbite-svelte';
 </script>
 

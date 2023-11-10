@@ -1,7 +1,7 @@
 <script>
   import { Button, ButtonGroup } from 'flowbite-svelte';
   import SocialButton from './SocialButton.svelte';
-  import socials from '$lib/utils/socials';
+  import socials from '$lib/data/socials';
 </script>
 
 <div>

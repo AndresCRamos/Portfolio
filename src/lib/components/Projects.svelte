@@ -1,5 +1,5 @@
 <script>
-  import { projects } from '$lib/utils/projects';
+  import { projects } from '$lib/data/projects';
   import { ProjectCarousel } from './ProjectCarousel';
 </script>
 
