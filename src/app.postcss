@@ -24,3 +24,16 @@ p {
 .dark {
   @apply bg-gray-900 text-gray-400;
 }
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  @apply bg-gray-400 dark:bg-gray-800;
+}
