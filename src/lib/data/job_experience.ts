@@ -1,10 +1,10 @@
-import type { Block } from '$lib/types/block';
+import type { JobExperience } from '$lib/types/job_experience';
 
-export const job_experience = new Map([
+export const job_experience = new Map<string, JobExperience>([
   [
     'mercadolibre',
     {
-      title: 'Mercado Libre',
+      company: 'Mercado Libre',
       position: 'Software Analyst',
       dates: {
         from: {
@@ -33,7 +33,7 @@ export const job_experience = new Map([
           value:
             'Then i worked in the Business Continuous Integration, helping with solving more complex problems, still related to the card payments ecosystem'
         }
-      ] as Block[]
+      ]
     }
   ]
 ]);
