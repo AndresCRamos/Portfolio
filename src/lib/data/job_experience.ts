@@ -6,6 +6,16 @@ export const job_experience = new Map([
     {
       title: 'Mercado Libre',
       position: 'Software Analyst',
+      dates: {
+        from: {
+          month: 6,
+          year: 2022
+        },
+        to: {
+          month: 7,
+          year: 2023
+        }
+      },
       blocks: [
         {
           type: 'list',
