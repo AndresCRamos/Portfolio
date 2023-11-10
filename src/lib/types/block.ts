@@ -1,12 +1,12 @@
 interface ListBlock {
   type: 'list';
-  title: string;
+  title?: string;
   value: string[];
 }
 
 interface TextBlock {
   type: 'text';
-  title: string;
+  title?: string;
   value: string;
 }
 
