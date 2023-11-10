@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
-import type { Block } from '$lib/types/block';
+import { job_experience } from '$lib/data/job_experience';
 
 export const load = (async ({ params }) => {
   const experience = params.experiences;
@@ -10,31 +10,3 @@ export const load = (async ({ params }) => {
   const experienceData = job_experience.get(experience);
   return experienceData;
 }) satisfies PageLoad;
-
-const job_experience = new Map([
-  [
-    'mercadolibre',
-    {
-      title: 'Mercado Libre',
-      position: 'Software Analyst',
-      blocks: [
-        {
-          type: 'list',
-          title: 'Tech Stack',
-          value: ['Golang', 'Gin Gonic', 'REST APIs']
-        },
-        {
-          type: 'text',
-          title: 'In depth',
-          value:
-            'In Mercado Libre i first worked maintaining the microservices responsible for processing payments made using credit or debit cards'
-        },
-        {
-          type: 'text',
-          value:
-            'Then i worked in the Business Continuous Integration, helping with solving more complex problems, still related to the card payments ecosystem'
-        }
-      ] as Block[]
-    }
-  ]
-]);
