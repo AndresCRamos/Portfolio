@@ -13,6 +13,7 @@ const config = {
 
   theme: {
     screens: {
+      xxs: '375px',
       xs: '425px',
       ...defaultTheme.screens
     },
