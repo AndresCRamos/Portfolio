@@ -20,5 +20,5 @@
     <EnvelopeSolid class="group-hover:hidden" />
     <EnvelopeOpenSolid class="hidden group-hover:block" />
   {/if}
-  <span>{title}</span>
+  <span class="hidden xxs:block">{title}</span>
 </Button>
