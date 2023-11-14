@@ -19,19 +19,37 @@ export const job_experience = new Map<string, JobExperience>([
       blocks: [
         {
           type: 'list',
-          title: 'Tech Stack',
-          value: ['Golang', 'Gin Gonic', 'REST APIs']
+          title: 'What i learned?',
+          value: [
+            'Golang', 
+            'Gin Gonic', 
+            'REST APIs', 
+            'Microservices',
+            'Unit testing'
+          ]
         },
         {
           type: 'text',
-          title: 'In depth',
-          value:
-            'In Mercado Libre i first worked maintaining the microservices responsible for processing payments made using credit or debit cards'
+          title: 'Whats Mercado Libre?',
+          value: 'Mercado Libre is a startup leader in e-commerce and fintech solutions across Latin America',
         },
         {
           type: 'text',
+          title: 'Resume',
           value:
-            'Then i worked in the Business Continuous Integration, helping with solving more complex problems, still related to the card payments ecosystem'
+            'In Mercado Libre i first worked in the fintech division, Mercado Pago, there i worked in the team responsible for processing payments made with debit and credit cards'
+        },
+        {
+          type: 'text',
+          title: 'Maintaining microservices',
+          value:
+            'First i worked in the team responsible for maintaining the microservices responsible for communicating the payments made inside the Mercado Pago ecosystem and the entity that emitted the card that generated the payment'
+        },
+        {
+          type: 'text',
+          title: 'BCI',
+          value:
+            'Then i worked in the Business Continuous Integration team, solving more broad problems, while i worked closely with my old team, i also worked with other teams with different responsibilities'
         }
       ]
     }
