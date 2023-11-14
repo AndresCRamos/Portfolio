@@ -37,7 +37,7 @@ export const job_experience = new Map<string, JobExperience>([
           type: 'text',
           title: 'Resume',
           value:
-            'In Mercado Libre i first worked in the fintech division, Mercado Pago, there i worked in the team responsible for processing payments made with debit and credit cards'
+            'In Mercado Libre i worked in the fintech division, Mercado Pago, there i worked in the team responsible for processing payments made with debit and credit cards'
         },
         {
           type: 'text',
