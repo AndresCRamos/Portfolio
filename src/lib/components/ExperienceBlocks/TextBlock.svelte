@@ -6,5 +6,5 @@
 </script>
 
 <BasicBlock {title}>
-  <p>{text}</p>
+  <p class="text-base font-thin">{text}</p>
 </BasicBlock>
