@@ -6,14 +6,12 @@
   let options = {
     perPage: 1,
     drag: true,
-    // autoplay: true,
+    autoplay: true,
     type: 'loop',
-    gap: '4rem',
     pagination: false,
     arrow: false,
     interval: 1000 * 30,
-    pauseOnHover: true,
-    width: '80vw'
+    pauseOnHover: true
   };
 
   interface Project {
@@ -27,7 +25,7 @@
 </script>
 
 <div>
-  <Splide hasTrack={false} {options}>
+  <Splide hasTrack={false} {options} class="w-full">
     <div class="sm:px-20">
       <SplideTrack>
         {#each projects as project}

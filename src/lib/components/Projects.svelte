@@ -3,7 +3,7 @@
   import { ProjectCarousel } from './ProjectCarousel';
 </script>
 
-<div>
-  <h1 class="mb-4">Personal Projects</h1>
+<div class="w-full">
+  <h1 class="pb-4">Personal Projects</h1>
   <ProjectCarousel {projects} />
 </div>
