@@ -7,6 +7,7 @@
 <div>
   <h2 class="text-secondary-500 dark:text-secondary-300">Curious about this portfolio?</h2>
   <Button
+    href="https://github.com/AndresCRamos/Portfolio"
     class="bg-accent-400  hover:bg-accent-600 dark:bg-accent-300 dark:hover:bg-accent-500 dark:text-gray-600 mt-2 mb-4"
     >Check its source code</Button
   >
