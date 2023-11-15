@@ -7,7 +7,7 @@
 <div class="h-[95dvh] flex flex-col justify-center gap-2">
   {#if $page.status == 404}
     <h1 class="text-7xl">Oops</h1>
-    <p class="text-4xl font-thin">Looks like the page you're trying to access is not availabl</p>
+    <p class="text-4xl font-thin">Looks like the page you're trying to access is not available</p>
     <div class="mt-12">
       <Button
         href="{base}/"
