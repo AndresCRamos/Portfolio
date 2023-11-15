@@ -4,7 +4,7 @@ const experiences = [
     job: 'PHP Junior Dev',
     description:
       'I worked for a software engineer who had a contract with Tata Consultant Services, mantaining PHP legacy apps for clients',
-    redirect: ''
+    redirect: '/jobs/tcs'
   },
   {
     company: 'Mercado pago',
