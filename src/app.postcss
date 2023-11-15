@@ -1,0 +1,39 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  @apply text-4xl text-center font-bold text-primary-700 dark:text-primary-500;
+}
+
+:root {
+  @apply bg-gray-100 text-black text-center transition-colors duration-300;
+}
+
+p {
+  @apply text-xl md:text-2xl;
+}
+
+.dark {
+  @apply bg-gray-900 text-gray-400;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  @apply bg-gray-400 dark:bg-gray-800;
+}
