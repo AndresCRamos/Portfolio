@@ -3,6 +3,7 @@
   import { Button } from 'flowbite-svelte';
   import type { PageData } from './$types';
   import CurvyDecorator from '$lib/components/CurvyDecorator.svelte';
+  import { base } from '$app/paths';
 
   export let data: PageData;
 
@@ -12,7 +13,7 @@
 
 <main class="h-[95dvh] overflow-y-auto mx-auto">
   <div class=" w-4/5 mx-auto mt-24 mb-8">
-    <Button href="/" size="lg" class="w-full max-w-3xl">Go back</Button>
+    <Button href="{base}/" size="lg" class="w-full max-w-3xl">Go back</Button>
     <h1 class="text-4xl mt-12">{data.company}</h1>
     <h2 class="text-2xl text-secondary-500 dark:text-secondary-400 mb-4">
       {data.position}

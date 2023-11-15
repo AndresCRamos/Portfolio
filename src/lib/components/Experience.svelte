@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import { experiences } from '$lib/data/experience';
   import { Card } from 'flowbite-svelte';
 </script>
@@ -16,7 +17,10 @@
           <p class="hidden text-base lg:block">{experience.description}</p>
         </div>
 
-        <a class="text-accent-500 dark:text-accent-200 font-bold mt-2" href={experience.redirect}>
+        <a
+          class="text-accent-500 dark:text-accent-200 font-bold mt-2"
+          href="{base}/{experience.redirect}"
+        >
           Learn more
         </a>
       </Card>
