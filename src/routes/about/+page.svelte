@@ -7,6 +7,7 @@
 <main
   class="flex flex-col items-center gap-6 px-4 w-full max-w-5xl h-[95dvh] overflow-y-scroll mx-auto"
 >
+  <div class="flex-grow" />
   <Button href="{base}/">Go to home</Button>
   <Avatar src={Photo} size="xl" />
   <h1>Hi, im Andres Ramos</h1>
@@ -22,4 +23,5 @@
     Most of my experience is working in fintech apps, always searching secure solutions for its
     users, and the developers that make these apps possible in the first place
   </p>
+  <div class="flex-grow" />
 </main>
