@@ -15,6 +15,10 @@
     lives of the people, creating new opportunities for all
   </p>
   <p>
+    Im a passionate learner, always searching fascinating new tech, and thinking how apply it to
+    challenging problems.
+  </p>
+  <p>
     Most of my experience is working in fintech apps, always searching secure solutions for its
     users, and the developers that make these apps possible in the first place
   </p>
