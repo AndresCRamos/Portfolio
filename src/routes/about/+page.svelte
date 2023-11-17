@@ -2,6 +2,18 @@
   import { Avatar, Button } from 'flowbite-svelte';
   import Photo from '$lib/images/avatar.jpg';
   import { base } from '$app/paths';
+
+  let tools: string[] = [
+    'Golang',
+    'Python',
+    'Django',
+    'Gin Gonic',
+    'HTML/CSS',
+    'SvelteKit',
+    'TailwindCSS',
+    'Big Query',
+    'Docker'
+  ];
 </script>
 
 <main class=" h-[95dvh] overflow-y-scroll mx-auto">
@@ -22,6 +34,15 @@
       Most of my experience is working in fintech apps, always searching secure solutions for its
       users, and the developers that make these apps possible in the first place
     </p>
+    <div class="w-full">
+      <p>Some of the things i used in my day to day:</p>
+      <ul class="mx-auto w-4/5 flex flex-wrap gap-4 my-2">
+        {#each tools as tool}
+          <li class=" flex-grow text-lg font-thin">{tool}</li>
+        {/each}
+      </ul>
+    </div>
+
     <div class="flex-grow" />
   </section>
 </main>
