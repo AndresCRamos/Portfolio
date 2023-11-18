@@ -34,7 +34,7 @@
       Most of my experience is working in fintech apps, always searching secure solutions for its
       users, and the developers that make these apps possible in the first place
     </p>
-    <div class="w-full">
+    <div class="w-full pb-[5dvh]">
       <p>Some of the things i used in my day to day:</p>
       <ul class="mx-auto w-4/5 flex flex-wrap gap-4 my-2">
         {#each tools as tool}
@@ -42,7 +42,6 @@
         {/each}
       </ul>
     </div>
-
     <div class="flex-grow" />
   </section>
 </main>
