@@ -1,12 +1,6 @@
 <script lang="ts">
-  import { ArrowKeyDown, Card } from 'flowbite-svelte';
-  import {
-    AngleDownOutline,
-    ArrowDownOutline,
-    ArrowDownSolid,
-    ArrowDownToBraketSolid,
-    ArrowUpRightFromSquareOutline
-  } from 'flowbite-svelte-icons';
+  import { Card } from 'flowbite-svelte';
+  import { AngleDownOutline, ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
 
   export let title: string;
   export let description: string;
@@ -14,7 +8,7 @@
   export let url: string = '';
 </script>
 
-<Card class="mx-4 relative group pb-2" padding="none" size="lg">
+<Card class="mx-4 sm:mx-0 relative group pb-2 shadow-none" padding="none" size="lg">
   <h1
     class="font-bold text-center text-2xl rounded-t-lg p-2 bg-secondary-400 dark:bg-secondary-500 text-gray-500 dark:text-gray-700"
   >
