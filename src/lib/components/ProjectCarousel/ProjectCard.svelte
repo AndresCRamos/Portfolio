@@ -14,7 +14,10 @@
   >
     {title}
   </h1>
-  <p class="px-5 text-base xs:text-xl my-4">{description}</p>
+  <div class="flex grow justify-center items-center">
+    <p class="px-5 text-base xs:text-xl my-4">{description}</p>
+  </div>
+
   <p class="text-sm font-bold text-accent-300 flex gap-1 justify-center">
     Click me for more info <AngleDownOutline class="text-accent-500 text-sm" size="sm" />
   </p>
