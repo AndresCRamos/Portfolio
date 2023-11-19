@@ -2,6 +2,7 @@
   import '@splidejs/splide/dist/css/splide.min.css';
   import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
   import ProjectCard from './ProjectCard.svelte';
+  import type { Project } from '$lib/types/projects';
 
   let options = {
     perPage: 1,
@@ -13,13 +14,6 @@
     interval: 1000 * 30,
     pauseOnHover: true
   };
-
-  interface Project {
-    title: string;
-    description: string;
-    stack: string[];
-    url?: string;
-  }
 
   export let projects: Project[];
 </script>
