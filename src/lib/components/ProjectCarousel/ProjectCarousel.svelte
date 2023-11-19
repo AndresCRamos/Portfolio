@@ -3,6 +3,7 @@
   import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
   import ProjectCard from './ProjectCard.svelte';
   import type { Project } from '$lib/types/projects';
+  import { AngleLeftSolid, AngleRightSolid } from 'flowbite-svelte-icons';
 
   let options = {
     perPage: 1,
@@ -30,8 +31,8 @@
       </SplideTrack>
     </div>
     <div class="splide__arrows">
-      <button class="splide__arrow splide__arrow--prev">Prev</button>
-      <button class="splide__arrow splide__arrow--next">Next</button>
+      <button class="splide__arrow splide__arrow--prev"><AngleRightSolid /></button>
+      <button class="splide__arrow splide__arrow--next"><AngleRightSolid /></button>
     </div>
     <div class="splide__progres">
       <div class="bg-black splide__progress__bar" />
@@ -45,7 +46,7 @@
   }
 
   .splide__arrow {
-    @apply bg-secondary-400 w-10 h-10 text-white hidden sm:block;
+    @apply bg-secondary-400 w-10 h-10 text-white hidden sm:flex;
   }
 
   :global(.splide__slide) {
