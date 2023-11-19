@@ -1,6 +1,12 @@
 <script lang="ts">
-  import { Card } from 'flowbite-svelte';
-  import { ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
+  import { ArrowKeyDown, Card } from 'flowbite-svelte';
+  import {
+    AngleDownOutline,
+    ArrowDownOutline,
+    ArrowDownSolid,
+    ArrowDownToBraketSolid,
+    ArrowUpRightFromSquareOutline
+  } from 'flowbite-svelte-icons';
 
   export let title: string;
   export let description: string;
@@ -15,6 +21,9 @@
     {title}
   </h1>
   <p class="px-5 text-base xs:text-xl my-4">{description}</p>
+  <p class="text-sm font-bold text-accent-300 flex gap-1 justify-center">
+    Click me for more info <AngleDownOutline class="text-accent-500 text-sm" size="sm" />
+  </p>
 
   <div
     class="rounded-lg absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-90 bg-primary-900 dark:bg-primary-600 transition-all duration-500 translate-y-full group-hover:translate-y-0"
