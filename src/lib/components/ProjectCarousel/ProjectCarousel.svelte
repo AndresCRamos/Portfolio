@@ -50,6 +50,6 @@
   }
 
   :global(.splide__slide) {
-    @apply flex flex-col justify-center;
+    @apply flex justify-center;
   }
 </style>
