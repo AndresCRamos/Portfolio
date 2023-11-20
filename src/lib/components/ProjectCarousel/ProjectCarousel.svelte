@@ -34,7 +34,7 @@
       <button class="splide__arrow splide__arrow--prev"><AngleRightSolid /></button>
       <button class="splide__arrow splide__arrow--next"><AngleRightSolid /></button>
     </div>
-    <div class="splide__progres mx-4 sm:mx-20">
+    <div class="splide__progres mx-4 sm:mx-24">
       <div class="splide__progress__bar" />
     </div>
   </Splide>
