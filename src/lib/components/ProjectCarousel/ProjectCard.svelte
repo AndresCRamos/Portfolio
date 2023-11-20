@@ -18,14 +18,14 @@
     <p class="px-5 text-base xs:text-xl my-4">{description}</p>
   </div>
 
-  <p class="text-sm font-bold text-accent-300 flex gap-1 justify-center">
-    Click me for more info <AngleDownOutline class="text-accent-500 text-sm" size="sm" />
+  <p class="text-sm font-bold text-accent-300 flex group-hover:opacity-0 gap-1 justify-center">
+    Click me for more <AngleDownOutline class="text-accent-500 text-sm" size="sm" />
   </p>
 
   <div
-    class="rounded-lg absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-90 bg-primary-900 dark:bg-primary-600 transition-all duration-500 translate-y-full group-hover:translate-y-0"
+    class="rounded-lg absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-95 bg-primary-900 dark:bg-primary-600 transition-all duration-500 translate-y-full group-hover:translate-y-0"
   >
-    <h2 class="text-lg text-secondary-600 dark:text-secondary-600">Made using</h2>
+    <h2 class="text-lg text-secondary-600 dark:text-secondary-600 font-bold">Made using</h2>
     <ul>
       {#each stack as tech}
         <li class="text-gray-100">{tech}</li>
