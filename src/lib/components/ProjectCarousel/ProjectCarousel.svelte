@@ -2,6 +2,8 @@
   import '@splidejs/splide/dist/css/splide.min.css';
   import { Splide, SplideSlide, SplideTrack } from '@splidejs/svelte-splide';
   import ProjectCard from './ProjectCard.svelte';
+  import type { Project } from '$lib/types/projects';
+  import { AngleRightSolid } from 'flowbite-svelte-icons';
 
   let options = {
     perPage: 1,
@@ -13,13 +15,6 @@
     interval: 1000 * 30,
     pauseOnHover: true
   };
-
-  interface Project {
-    title: string;
-    description: string;
-    stack: string[];
-    url?: string;
-  }
 
   export let projects: Project[];
 </script>
@@ -36,11 +31,11 @@
       </SplideTrack>
     </div>
     <div class="splide__arrows">
-      <button class="splide__arrow splide__arrow--prev">Prev</button>
-      <button class="splide__arrow splide__arrow--next">Next</button>
+      <button class="splide__arrow splide__arrow--prev"><AngleRightSolid /></button>
+      <button class="splide__arrow splide__arrow--next"><AngleRightSolid /></button>
     </div>
-    <div class="splide__progres">
-      <div class="bg-black splide__progress__bar" />
+    <div class="splide__progres mx-4 sm:mx-24">
+      <div class="splide__progress__bar" />
     </div>
   </Splide>
 </div>
@@ -51,10 +46,10 @@
   }
 
   .splide__arrow {
-    @apply bg-secondary-400 w-10 h-10 text-white hidden sm:block;
+    @apply bg-secondary-400 w-10 h-10 text-white hidden sm:flex;
   }
 
   :global(.splide__slide) {
-    @apply flex flex-col justify-center;
+    @apply flex justify-center;
   }
 </style>

@@ -14,7 +14,7 @@
           <h2 class="text-secondary-500 dark:text-secondary-300 text-base mb-2">
             {experience.job}
           </h2>
-          <p class="hidden text-base lg:block">{experience.description}</p>
+          <p class="hidden text-base sm:block">{experience.description}</p>
         </div>
 
         <a
