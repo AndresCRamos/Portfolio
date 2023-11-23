@@ -1,15 +1,16 @@
 const projects = [
   {
     title: 'Product Manager Backend',
-    description: 'A REST API designed to manage the inventory of a distributor, from buy to sell',
+    description:
+      'This app started as a Uni project for database course, but it quickly converted into an app thought to manage the necessities of a distributor business',
     stack: ['Python', 'Django', 'PostgreSQL', 'Docker'],
     url: 'https://github.com/AndresCRamos/Product-Manager-Backend'
   },
   {
     title: 'Simple Finances App',
     description:
-      'REST API designed with the goal of managing the personal finances of the day to day expenses',
-    stack: ['Go', 'Gin Gonic', 'PostgreSQL', 'Docker'],
+      'Managing personal finances of one itself can become a hard exercise, but a necessary one for achieving financial stability, so i design and created this REST API to makes this process more easy',
+    stack: ['Go', 'Gorilla Mux', 'PostgreSQL', 'Docker'],
     url: 'https://github.com/AndresCRamos/Simple-Personal-Finances'
   }
 ];
